@@ -75,6 +75,15 @@ decreaseBtn.addEventListener("click", function () {
   updateSize();
 });
 
+//color btn
+colorBtn.addEventListener("change", function (e) {
+  color = e.target.value;
+});
+
+//clear btn
+clearBtn.addEventListener("click", function () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
 //updating the strokewidth dynamically
 function updateSize() {
   strokeThickness.innerText = size;
